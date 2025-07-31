@@ -5,13 +5,14 @@ body, html {
   background-color: #FA7921;
 }
 
-/* Background picture insert
+/* Background picture insert */
+
 body {
   background-image: url(https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.5iQBmfrKud9R5WShcGJ2JQHaE8%3Fpid%3DApi&f=1&ipt=f415e0fdfcd8cb09a365d8955edb40193e023b96654c9a147ab3ea2d8cd134c5&ipo=images);
   background-repeat: no-repeat; 
   background-position: center center; 
   background-size: cover; 
   background-attachment: fixed;
-} */
+} 
 
 
