@@ -10,12 +10,72 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.ynASAOnvO-K_dj0KN7HTrAHaEo%3Fpid%3DApi&f=1&ipt=be08dc5e5d60c71c13b5144cd55c9795a51e53019da43fe640e24437ce706563&ipo=images') no-repeat;
+    background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.G2DOjQUIlf5IBNNH3G6lQwHaEO%3Fpid%3DApi&f=1&ipt=19ae4808495a463acb66d961d90f369b2390fb96ca1c9af4c26334fa796a5087&ipo=images') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 249px;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+header ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 30px;
+}
+
+header ul li:last-child {
+    margin-right: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #42424A;
+    padding: 22px 0;
+    display: inline-block;
+    transition: all ease 0.3s;
+    font-size: 18px;
+}
+
+header ul li a:hover {
+    color: white;
+}
+
+/* Submenu style */
+header ul .submenu {
+    position: absolute;
+    width: 200px;
+    box-shadow: 0 20px 45px #00000a20;
+    background-color: #ffffff;
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition: all ease 0.5s;
+}
+
+header ul li:hover .submenu {
+    z-index: 99;
+    opacity: 1;
+    margin-top: 0;
+}
+
+header ul .submenu li {
+    margin: 0;
+    width: 100%;
 }
 
 .wrapper {
     width: 420px;
-    background: yellow;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     color: #fff;
     border-radius: 10px;
     padding: 30px 40px;
